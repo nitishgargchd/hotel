@@ -1,0 +1,15 @@
+.main {
+background-color:green;
+height:1000px;
+width:1000px;	
+margin:auto;
+}
+.header {
+height:90px;
+background-color:blue;
+border:2px solid red;
+}
+.nav {
+height:50px;
+background-color:white;
+}

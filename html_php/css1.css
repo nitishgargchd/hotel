@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+	}
+
+html, body{
+  width: 80%;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  margin-top:6%;
+  margin-left:auto;
+  margin-right:auto;
+  position:relative;
+  
+
+}
+header{
+	margin-top: 5%;
+	margin-bottom:2%;
+	padding: 5px;
+}
+nav {
+	border: 1px solid #332500;
+	background-color: #675932;
+	color:white;
+	padding: 20px;
+	font-size: 20px;
+}
+
+#logout{
+	float:right;
+}
+a {
+	color:#ffffff;
+}
+legend{
+	display:block;
+	text-align:center;
+	position:relative;
+	width: 96%;
+	border: 2px solid #332500;
+	background: #141C46;
+	padding: 15px;
+	color: #fff;
+	font-size: 25px;
+}
+#content{
+	border: 2px solid black;
+	height: 40%;
+	padding: 8% 6%;
+	margin-top: 5px;
+	background-image:url("9.jpg");
+  background-size:100%;
+}
+
+.button{
+	background-color: #141C46;
+	border: black;
+	border-radius: 8px;
+	color:white;
+	padding: 15px 32px;
+	display: inline-block;
+	margin-left: -8px;
+	margin-top: 4%;
+	margin-right: 20px;
+	width: 15%;
+}
+
+.label{
+	float: left;
+	width: 40%;
+	margin-right: 2%;
+	text-align: right;
+}
+label{
+	float:right;
+	display: block;
+	padding: 10px 5px 10px 5px;
+	margin: 3px;
+	margin-bottom:5px;
+	width: 70%;
+}
+
+.input{
+	float: right;
+	width: 55%;
+	display: block;
+	
+}
+
+#input1{
+	display: block;
+	padding: 10px 5px 10px 5px;
+	margin-top: 6px;
+	margin-bottom: 3px;
+    border: 2px solid #141C46;
+	border-radius: 4px;
+	width: 70%;
+	height: 15px;
+	
+}
+#back{
+	float:left;
+}

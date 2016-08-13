@@ -1,0 +1,61 @@
+.header {
+height: 300px;
+width: 100%;
+border: 1px solid green;
+}
+
+.homebutton {
+height: 19%;
+width: 9%;
+border-radius: 20px;
+margin-top: 2%;
+margin-left: 80%;
+}
+
+.buttontext {
+margin: 3px 5px 0px 0px;
+float: right;
+}
+
+.banner {
+background: #ff9900;
+width: 80%;
+height: 300px;
+border: 1px solid #ff9900;
+position: absolute;
+margin-left: 8%;
+margin-top: -12%;
+border-radius: 20px;
+}
+
+.bantext {
+width: 45%;
+margin-left: 5%;
+margin-top: 5%;
+float: left;
+}
+
+.banimg {
+height: 146%;
+margin-left: 5%;
+width: 40%;
+float: left;
+}
+
+.img {
+margin: -32% 0% 0% 0%;
+}
+
+.wordWrap {
+word-wrap: break-word;      /* IE 5.5-7 */
+white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+white-space: pre-wrap;      /* current browsers */
+}
+
+.nav {
+width: 75%;
+height: 60px;
+background: green;
+border-radius: 0px 0px 10px 10px;
+margin: 10% 0% 0% 11%;
+}

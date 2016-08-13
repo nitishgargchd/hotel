@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <link rel=icon href=favicon.png sizes="16x16" type="image/png">
+  <link rel="stylesheet" href="../stylesheets/sunbeam-book.css">
+  
+
+
+</head>
+<body bgcolor="grey">
+  <div class="main">
+  <div class="header">
+    <h1 class="h"><font color="white">Book a room</font></h1>
+  
+  
+	</div>
+<form name="myForm"  onsubmit="return(validate());" class="demoForm" action="book_room.php" method="post">
+Name : <input type="text" name="Name" style="width: 500px"/><br/><br/>
+Email: <input type="text" name="EMail" style="width: 504px"/><br/><br/>
+Contact No: <input type="text" name="pno"  style="width: 468px"/><br/><br/>
+Place:<input type="text" name="place"  style="width: 510px"/><br/><br/>
+<input type="submit" value="Book" style="margin-left: 35%" name="btn"/>
+</form><br /><br /><br /><br />
+  
+  
+    <script type="text/javascript">
+function validateEmail()
+{
+	var emailID = document.myForm.EMail.value;
+	atpos = emailID.indexOf("@");
+	dotpos = emailID.lastIndexOf(".");
+	if (atpos < 1 || ( dotpos - atpos < 2 ))
+	{
+		alert("Please enter correct email ID")
+		document.myForm.EMail.focus() ;
+		return false;
+	}
+	return( true );
+}
+
+function validate()
+{
+	if( document.myForm.Name.value == "" )
+	{
+	alert( "Please provide your name!" );
+	document.myForm.Name.focus() ;
+	return false;
+	}
+
+	if( document.myForm.EMail.value == "" )
+	{
+	alert( "Please provide your Email!" );
+	document.myForm.EMail.focus() ;
+	return false;
+	}
+
+	else
+	{
+	var ret = validateEmail();
+	if( ret == false )
+		{
+		return false;
+		}
+	}
+
+	if(document.myForm.pno.value == "" ||
+	   isNaN( document.myForm.pno.value ) ||
+	   document.myForm.pno.value.length < 10
+	  )
+	{
+		alert( "Please provide a valid mobile number." );
+		document.myForm.pno.focus() ;
+		return false;
+	}	
+	if( document.myForm.place.value == "" )
+	{
+	alert( "Please provide your location!" );
+	return false;
+	}
+	alert("Your room is booked. We will contact you soon!");
+	return( true );
+}
+</script>
+</body>
+</html>
